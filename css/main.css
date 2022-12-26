@@ -1,82 +1,87 @@
-body
-{
-    font-size: 14px;
-    font-family: "Larsseit";
-    line-height: 1;
+body {
+  font-size: 14px;
+  font-family: "Larsseit";
+  line-height: 1;
 }
 
-.wrapper
-{
-    overflow: hidden;
+.wrapper {
+  overflow: hidden;
 }
-
-
-
 
 @media screen and (min-width: 1200px) {
-    .container
-    {
-        width: 1440px;
-        margin: 0 auto;
-    }
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
 
-    .header
-    {
-        background-color: #f4f9e2;
-        height: 60.1em;
-    }
+  .header {
+    height: 60.1em;
+    /* background-image: url("../images/Mask Group.png");
+    background-color: #c3c3c3; */
+    background:url("../images/Mask Group.png"), linear-gradient(to right,#f4f9e2 70%, #fff 30%);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-    .header_inner_top
-    {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  .header_inner_top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1.92em;
+    
+  }
 
-    .header_inner_top_nav
-    {
-        display: flex;
-    }
+  .header_inner_top_logo {
+    font-size: 1.71em;
+    font-weight: 700;
+    color: #62d0df;
+  }
 
-    .header_inner_top_nav_li
-    {
-        margin-right: 0.5em;
-    }
+  .header_inner_top_nav {
+    display: flex;
+  }
 
-    .header_inner_top_nav_li_a
-    {
-        color: #22356F;
-        text-transform: capitalize;
-    }
+  .header_inner_top_nav_li {
+    margin-right: 1.85em;
+  }
 
-    .header_inner_top_nav_li_a::after
-    {
-        content: '';
-        display: block;
-        width: 0;
-        margin-top: 1em;
-        height: 1px;
-        background: #22356F;
-        transition: width .3s;
-    }
+  .header_inner_top_nav_li_a {
+    color: #22356f;
+    text-transform: capitalize;
+  }
 
-    .header_inner_top_nav_li_a:hover::after
-    {
-        width: 100%;
-    }
+  .header_inner_top_nav_li_a::after {
+    content: "";
+    display: block;
+    width: 0;
+    margin-top: 1em;
+    height: 1px;
+    background: #22356f;
+    transition: width 0.3s;
+  }
+
+  .header_inner_top_nav_li_a:hover::after {
+    width: 100%;
+  }
+
+  .header_inner_top_cu {
+    padding: 20px 30px;
+    background-color: #62d0df;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3.5em;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
 }
 
 @media screen and (max-width: 767px) {
-    
 }
 
 @media screen and (max-width: 650px) {
-    
 }
