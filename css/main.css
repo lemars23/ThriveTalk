@@ -1,0 +1,82 @@
+body
+{
+    font-size: 14px;
+    font-family: "Larsseit";
+    line-height: 1;
+}
+
+.wrapper
+{
+    overflow: hidden;
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .container
+    {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .header
+    {
+        background-color: #f4f9e2;
+        height: 60.1em;
+    }
+
+    .header_inner_top
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header_inner_top_nav
+    {
+        display: flex;
+    }
+
+    .header_inner_top_nav_li
+    {
+        margin-right: 0.5em;
+    }
+
+    .header_inner_top_nav_li_a
+    {
+        color: #22356F;
+        text-transform: capitalize;
+    }
+
+    .header_inner_top_nav_li_a::after
+    {
+        content: '';
+        display: block;
+        width: 0;
+        margin-top: 1em;
+        height: 1px;
+        background: #22356F;
+        transition: width .3s;
+    }
+
+    .header_inner_top_nav_li_a:hover::after
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 650px) {
+    
+}
